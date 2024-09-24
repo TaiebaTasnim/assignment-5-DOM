@@ -8,8 +8,6 @@ const title1=document.getElementById('title-1')
 const sucessfull=document.getElementById("btn-continue")
 
 
-const donation=document.getElementById('cards')
-
 
 
 document.getElementById('donate-btn').addEventListener('click',function(){
@@ -160,6 +158,7 @@ function getInputValue(id){
 
 const historyBtn = document.getElementById('history-btn');
 const donationBtn = document.getElementById('donation-btn');
+const donation=document.getElementById('cards');
 
 
 historyBtn.addEventListener('click', function () {
