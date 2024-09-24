@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme="light">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blog</title>
+      <!-- daisyUI CDN -->
+      
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+      <style>
+            .font{
+                  font-family: "Lexend", sans-serif;
+            }
+      </style>
+</head>
+<body class="font">
+      <header class="sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30">
+            <div class="bg-[#F9F7F3] ">
+                  <div class="container mx-auto  flex justify-between pt-3 pb-6 w-[80%]">
+                        <div>
+                              <a href="index.html" class="btn font-semibold text-xl text-[#111111] bg-[#B4F461] hover:bg-[#B4F461] rounded-lg px-7 ">Home</a>
+                        </div>
+                        <div class="hidden md:flex justify-center items-center space-x-3">
+                              <div >
+                                    <img src="./assets/logo.png" alt="" >
+      
+                              </div>
+                             
+                              <p class="font-semibold text-xl text-[#111111]">Donate Bangladesh</p>
+                        </div>
+                        <div class="flex space-x-2 justify-center items-center">
+                              <div >
+                                    <img src="./assets/coin.png" alt="">
+      
+                              </div>
+                              
+                              <p class="text-[#111111B3] font-medium text-[16px] md:text-xl"><span>5500</span> BDT</p>
+                        </div>
+      
+                  </div>
+
+            </div>
+           
+
+            <!-- <div class="flex justify-center mt-6 space-x-4">
+                  <button id='donation-btn' class="bg-[#B4F461] font-semibold text-xl text-[#111111] rounded-lg py-4 px-8">Donation</button>
+                  <button id='history-btn' class="border-[#1111114D] border-2 font-semibold text-xl text-[#111111] rounded-lg py-4 px-8">History</button>
+                  
+            </div> -->
+            
+
+      </header>
+      <main class="container mx-auto  w-[80%] mt-8">
+            <div id="faq-section">
+                  <h1 class="text-3xl font-extrabold">Important FAQ</h1>
+                  <div class="mt-6 border-[#1111111A] rounded-xl border-[2px]">
+                        <div class="collapse collapse-arrow space-y-4 ">
+                              <input type="radio" name="my-accordion-2" checked="checked" />
+                              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                              <div class="collapse-content">
+                                <p>The Document Object Model (DOM) is a structural representation of an HTML document as a tree of objects. DOM uses JavaScript to interact with and manipulate like read,update,change or delete elements on a web page. By using DOM we can make our website dynamic.</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="collapse collapse-arrow space-y-4  ">
+                              <input type="radio" name="my-accordion-2" />
+                              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                              <div class="collapse-content">
+                                <p>One can select an element from the DOM by using methods such as getElementById('ID') selects an element by its ID.getElementsByTag() selects all elements with a specific tag.style property is used to style elements.querySelectorAll() <br>selects all elements that match a CSS selector.
+                              </p>
+                              </div>
+                            </div>
+                            
+                            
+                            <hr>
+                            <div class="collapse collapse-arrow space-y-4 ">
+                              <input type="radio" name="my-accordion-2" />
+                              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                              <div class="collapse-content">
+                                <p>Event delegation is a technique where one attach a single event listener to a parent element, and it handles events triggered by its child elements.It is useful to same memory and it works even if child elements are added later.</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="collapse collapse-arrow space-y-4  ">
+                              <input type="radio" name="my-accordion-2" />
+                              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                              <div class="collapse-content">
+                                <p>One can manipulate an element's attributes by using some functions such as setAttribute() use to add or change an attribute.getAttribute() use to read an attribue.style property is used to style elements.</p>
+                              </div>
+                            </div>
+                            
+                           
+                            
+                  </div>
+
+            </div>
+           
+
+            <div id ='history-section'class="border-2 rounded-2xl border-[#1111111A] hidden">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam repellendus ea sapiente voluptatem a, sed quia quidem deleniti accusantium.</p>
+
+            </div>
+
+      </main>
+      <script src="./js/app.js"></script>
+      
+</body>
+</html>
